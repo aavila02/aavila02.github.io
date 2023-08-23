@@ -16,5 +16,5 @@ body {
 /* Define the hover animation */
 .animated-button:hover {
     background-color: #2980b9;
-    transform: scale(2); /* Scale the button slightly on hover */
+    transform: scale(1.05); /* Scale the button slightly on hover */
 }
