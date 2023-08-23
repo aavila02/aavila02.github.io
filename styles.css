@@ -5,7 +5,7 @@ body {
 /* Define styles for the button */
 .animated-button {
     background-color: #3498db;
-    color: #fff;
+    color: #000000;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -16,5 +16,5 @@ body {
 /* Define the hover animation */
 .animated-button:hover {
     background-color: #2980b9;
-    transform: scale(1.05); /* Scale the button slightly on hover */
+    transform: scale(2); /* Scale the button slightly on hover */
 }
