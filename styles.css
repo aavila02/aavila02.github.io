@@ -2,29 +2,16 @@ body {
   background-color: black;
   color: #ffffff;
 }
-/* Define styles for the button */
-.animated-button {
-    background-color: #3498db;
-    color: #000000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-/* Define the hover animation */
-.animated-button:hover {
-    background-color: #2980b9;
-    transform: scale(1.05); /* Scale the button slightly on hover */
-}
+
+/* Remove animated button styles */
+
 .btn {
-  font-size: 20px;
-  padding: 10px 20px; 
+  font-size: 20px; 
+  padding: 10px 20px;
   background-color: #0095f6;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px; 
 }
 
 .btn:hover {
@@ -33,10 +20,11 @@ body {
   border: 2px solid #0095f6;
 }
 
-.btn:not(:hover) {
-  content: "#$(\*@";
+/* Add content properties directly to .btn */
+.btn {
+  content: "#$(*@"; 
 }
 
 .btn:hover {
-  content: "Instagram"; 
+  content: "Instagram";
 }
