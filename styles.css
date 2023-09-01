@@ -2,25 +2,35 @@ body {
   background-color: black;
   color: #ffffff;
 }
+
 .btn {
-  font-size: 20px; 
+  font-size: 20px;
   padding: 10px 20px;
   background-color: #0095f6;
   color: white;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
+  position: relative; /* Add this to enable absolute positioning of ::before */
+}
+
+.btn::before {
+  content: "#$(*@"; /* Initial text content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover::before {
+  content: "Instagram"; /* Text content on hover */
 }
 
 .btn:hover {
   background-color: black;
   color: #0095f6;
   border: 2px solid #0095f6;
-}
-
-/* Add content properties directly to .btn */
-.btn:span{
-  content: "#$(*@" !important;
-}
-.btn:hover span{
-  content: "Instagram" !important;
 }
