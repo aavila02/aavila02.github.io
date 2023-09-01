@@ -19,8 +19,8 @@ body {
 
 /* Add content properties directly to .btn */
 .btn:span{
-  content: "#$(*@";
+  content: "#$(*@" !important;
 }
 .btn:hover span{
-  content: "Instagram";
+  content: "Instagram" !important;
 }
