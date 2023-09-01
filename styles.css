@@ -21,9 +21,6 @@ body {
 }
 
 /* Add content properties directly to .btn */
-.btn {
-  content: "#$(*@"; 
-}
 
 .btn:hover {
   content: "Instagram";
