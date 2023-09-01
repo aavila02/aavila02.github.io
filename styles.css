@@ -18,3 +18,25 @@ body {
     background-color: #2980b9;
     transform: scale(1.05); /* Scale the button slightly on hover */
 }
+.btn {
+  font-size: 20px;
+  padding: 10px 20px; 
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #0095f6;
+  border: 2px solid #0095f6;
+}
+
+.btn:not(:hover) {
+  content: "#$(\*@";
+}
+
+.btn:hover {
+  content: "Instagram"; 
+}
