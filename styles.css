@@ -2,9 +2,6 @@ body {
   background-color: black;
   color: #ffffff;
 }
-
-/* Remove animated button styles */
-
 .btn {
   font-size: 20px; 
   padding: 10px 20px;
@@ -15,7 +12,7 @@ body {
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: black;
   color: #0095f6;
   border: 2px solid #0095f6;
 }
@@ -25,5 +22,5 @@ body {
   content: "#$(*@";
 }
 .btn:hover span{
-  content: "Instagram" !important;
+  content: "Instagram";
 }
