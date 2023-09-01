@@ -25,5 +25,5 @@ body {
   content: "#$(*@";
 }
 .btn:hover span{
-  content: "Instagram";
+  content: "Instagram" !important;
 }
