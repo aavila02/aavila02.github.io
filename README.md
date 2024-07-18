@@ -1,4 +1,4 @@
-# Anthony Avila
+# Anthony
 ###### Email: x
 ###### Mobile: x
 ## ASU Alumni
