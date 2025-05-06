@@ -1,1 +1,257 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Avila Gonzalez | Cybersecurity & Software Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">AG</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Anthony Avila Gonzalez</h1>
+                <h2>Cybersecurity Specialist & Software Developer</h2>
+                <p>Computer Science student at Arizona State University with a focus on cybersecurity and software development.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Science student at Arizona State University specializing in Cybersecurity. With a strong foundation in programming and an interest in secure application development, I focus on creating solutions that prioritize data protection and privacy.</p>
+                    <p>Through my academic journey and personal projects, I've developed expertise in encryption techniques, secure software development, and identifying security vulnerabilities in web applications.</p>
+                    <p>I'm currently pursuing my Bachelor's degree with a GPA of 3.6/4.0 while gaining leadership experience as a supervisor and actively participating in the Society of Hispanic Professional Engineers (SHPE).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">C++</div>
+                            <div class="skill-level advanced">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level advanced">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">C</div>
+                            <div class="skill-level intermediate">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Java</div>
+                            <div class="skill-level intermediate">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Operating Systems</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">MacOS</div>
+                            <div class="skill-level advanced">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Linux</div>
+                            <div class="skill-level intermediate">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cybersecurity</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Encryption</div>
+                            <div class="skill-level intermediate">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Web Security</div>
+                            <div class="skill-level intermediate">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Password Manager</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/aavila02" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-description">
+                            <p>A secure password manager built with Python that implements AES-GCM encryption to protect stored passwords. Features include strong password generation through Scrypt key derivation and secure password retrieval.</p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Cryptography</span>
+                            <span class="tech-tag">File I/O</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Web Scraping for Data Security</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/aavila02" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-description">
+                            <p>Python-based web scraper designed to scan public websites and automatically detect exposed sensitive information like emails and API keys using regular expressions. Helps identify potential security vulnerabilities from plaintext data.</p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Web Scraping</span>
+                            <span class="tech-tag">Regular Expressions</span>
+                            <span class="tech-tag">API Handling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-container">
+                <div class="resume-content">
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <div class="resume-title">
+                            <h4>Arizona State University</h4>
+                            <span class="resume-date">Expected May 2026</span>
+                        </div>
+                        <p>B.S. in Computer Science, Emphasis on Cybersecurity</p>
+                        <p>GPA: 3.6/4.0</p>
+                        <p>Relevant Courses: Introduction to Cybersecurity, Data Structures & Algorithms, Operating Systems</p>
+                    </div>
+
+                    <h3>Leadership Experience</h3>
+                    <div class="resume-item">
+                        <div class="resume-title">
+                            <h4>Supervisor at Dairy Queen</h4>
+                            <span class="resume-date">August 2022 - Present</span>
+                        </div>
+                        <ul>
+                            <li>Led and motivated a diverse team to ensure smooth daily operations</li>
+                            <li>Managed scheduling and delegated responsibilities</li>
+                            <li>Collaborated with upper management to implement new initiatives</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-title">
+                            <h4>Member of SHPE (Society of Hispanic Professional Engineers)</h4>
+                            <span class="resume-date">December 2021 - Present</span>
+                        </div>
+                        <ul>
+                            <li>Engaged in professional development workshops</li>
+                            <li>Networked with industry professionals during SHPE events</li>
+                            <li>Participated in Hackathons and programming challenges</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-actions">
+                    <a href="assets/resume/Anthony_Avila_Gonzalez_Resume.pdf" class="btn primary-btn" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:aanthonyg72@proton.me">aanthonyg72@proton.me</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(602) 831-8635</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/a-anthony-g" target="_blank">linkedin.com/in/a-anthony-g</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/aavila02" target="_blank">github.com/aavila02</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Anthony Avila Gonzalez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
