@@ -160,3 +160,22 @@ function showError(input, message) {
     input.parentNode.appendChild(errorMessage);
     input.style.borderColor = 'var(--error-color)';
 }
+
+// Email obfuscation
+document.addEventListener('DOMContentLoaded', function() {
+    const emailDisplay = document.getElementById('email-display');
+    if (emailDisplay) {
+        // The email parts are split to prevent easy scraping
+        const emailUser = 'aanthonyg72';
+        const emailDomain = 'proton.me';
+        
+        // Create a mailto link with the constructed email
+        const emailLink = document.createElement('a');
+        emailLink.href = `mailto:${emailUser}@${emailDomain}`;
+        emailLink.textContent = `${emailUser}@${emailDomain}`;
+        
+        // Replace the placeholder with the actual email link
+        emailDisplay.innerHTML = '';
+        emailDisplay.appendChild(emailLink);
+    }
+});
