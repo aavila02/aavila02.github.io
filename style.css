@@ -273,6 +273,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .project-card {
@@ -315,6 +316,74 @@ section {
 .project-description {
     line-height: 1.7;
     color: #c0c0c0;
+}
+
+/* GitHub CTA Section */
+.projects-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2.5rem;
+    background: linear-gradient(135deg, #24292e 0%, #1a1f23 100%);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.github-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.github-button:hover::before {
+    left: 100%;
+}
+
+.github-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(36, 41, 46, 0.4);
+    border-color: #00d4ff;
+    background: linear-gradient(135deg, #2d333b 0%, #24292e 100%);
+}
+
+.github-button i.fab {
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.github-button i.fas {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.github-button:hover i.fas {
+    opacity: 1;
+    transform: translateX(3px);
+}
+
+.github-note {
+    margin-top: 1rem;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 /* Skills Section */
