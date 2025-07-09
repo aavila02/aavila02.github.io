@@ -1,291 +1,208 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony Avila Gonzalez | Cybersecurity & Software Development</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-     <!-- Favicon links -->
-    <link rel="icon" href="assets/icons/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <title>Anthony Avila Gonzalez - Software Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <div class="logo">AAG</div>
+    <header>
+        <nav>
+            <a href="#" class="logo">Anthony Avila</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Anthony Avila Gonzalez</h1>
-                <h2>Cybersecurity Specialist & Software Developer</h2>
-                <p>Computer Science student at Arizona State University with a focus on cybersecurity and software development.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary-btn">View Projects</a>
-                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
-                </div>
-            </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Anthony Avila Gonzalez</h1>
+            <p>Computer Science Student & Cybersecurity Enthusiast</p>
+            <a href="#about" class="cta-button">Explore My Work</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:602-831-8635">602-831-8635</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:aanthonyg72@proton.me">aanthonyg72@proton.me</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/a-anthony-g" target="_blank">LinkedIn Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/aavila02" target="_blank">GitHub Profile</a>
+                    </div>
+                </div>
                 <div class="about-text">
-                    <p>I'm a Computer Science student at Arizona State University specializing in Cybersecurity. With a strong foundation in programming and an interest in secure application development, I focus on creating solutions that prioritize data protection and privacy.</p>
-                    <p>Through my academic journey and personal projects, I've developed expertise in encryption techniques, secure software development, and identifying security vulnerabilities in web applications.</p>
-                    <p>I'm currently pursuing my Bachelor's degree with a GPA of 3.6/4.0 while gaining leadership experience as a supervisor and actively participating in the Society of Hispanic Professional Engineers (SHPE).</p>
+                    <p>I'm a passionate Computer Science student at Arizona State University with a focus on cybersecurity. Currently pursuing my Bachelor's degree with an expected graduation in May 2026, I have hands-on experience in cloud architecture, software development, and security practices.</p>
+                    <p>Through my internship at Accenture and various projects, I've gained valuable experience working with enterprise-level technologies including AWS, Azure, and modern web development frameworks. I'm particularly interested in the intersection of software engineering and cybersecurity, always looking for ways to build secure, scalable solutions.</p>
+                    <p>When I'm not coding, you can find me participating in hackathons, contributing to open-source projects, or engaging with the tech community through SHPE (Society of Hispanic Professional Engineers).</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Summer Technology Analyst Intern</div>
+                        <div class="experience-company">Accenture - Los Angeles, CA</div>
+                    </div>
+                    <div class="experience-date">June 2025 – August 2025</div>
+                </div>
+                <ul class="experience-description">
+                    <li>Shadowed data engineer to gain hands-on experience with cloud architecture using AWS and Azure platforms</li>
+                    <li>Collaborated with frontend engineers to identify and resolve software and build bugs, improving application performance for clients</li>
+                    <li>Gained exposure to enterprise-level software development practices and cloud technologies</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Supervisor</div>
+                        <div class="experience-company">Dairy Queen - Tempe, AZ</div>
+                    </div>
+                    <div class="experience-date">August 2021 – Present</div>
+                </div>
+                <ul class="experience-description">
+                    <li>Led and motivated a diverse team to ensure smooth daily operations while maintaining high service standards</li>
+                    <li>Managed scheduling and delegated responsibilities, ensuring appropriate staffing levels to meet customer demands</li>
+                    <li>Collaborated with upper management to implement new initiatives, driving improvements in customer experience</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Member</div>
+                        <div class="experience-company">Society of Hispanic Professional Engineers (SHPE) - Tempe, AZ</div>
+                    </div>
+                    <div class="experience-date">December 2021 – Present</div>
+                </div>
+                <ul class="experience-description">
+                    <li>Engaged in professional development workshops focused on leadership, communication, and technical skills</li>
+                    <li>Networked with industry professionals during SHPE events, fostering relationships with potential mentors and employers</li>
+                    <li>Participated in Hackathons and programming challenges hosted by ASU SHPE, worked with a team to solve these challenges and built relationships with them</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Interactive Web Application</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Canvas API</span>
+                    </div>
+                    <p class="project-description">Developed a full-stack web application with real-time data synchronization and cloud storage integration. Implemented secure authentication, file upload with automatic compression, and responsive design for mobile devices. Built interactive features including animated canvas elements, countdown timers, and dynamic content management.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Password Manager</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Cryptography</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">Scrypt</span>
+                    </div>
+                    <p class="project-description">Developed a secure password manager utilizing AES-GCM encryption scheme with unique nonce generation. Implemented key derivation using Scrypt for enhanced security and password complexity generation. Created JSON-based storage system with encrypted password retrieval functionality.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Web Scraping for Data Security</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Regular Expressions</span>
+                        <span class="tech-tag">Web Scraping</span>
+                    </div>
+                    <p class="project-description">Built automated web scraper to detect exposed sensitive information including emails and API keys. Implemented regular expression patterns to identify potential security vulnerabilities in plaintext data. Demonstrated proactive security measures by alerting users to potential information leaks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
+            <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Programming Languages</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-name">C++</div>
-                            <div class="skill-level advanced">Advanced</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Python</div>
-                            <div class="skill-level intermediate">Intermediate</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">C</div>
-                            <div class="skill-level intermediate">Intermediate</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Java</div>
-                            <div class="skill-level intermediate">Intermediate</div>
-                        </div>
+                    <div class="skill-list">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML/CSS</span>
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Operating Systems</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-name">MacOS</div>
-                            <div class="skill-level advanced">Advanced</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Linux</div>
-                            <div class="skill-level intermediate">Intermediate</div>
-                        </div>
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Express.js</span>
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Cybersecurity</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-name">Encryption</div>
-                            <div class="skill-level intermediate">Intermediate</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Web Security</div>
-                            <div class="skill-level intermediate">Intermediate</div>
-                        </div>
+                    <h3>Developer Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Azure</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">Visual Studio</span>
+                        <span class="skill-item">IntelliJ</span>
+                        <span class="skill-item">Eclipse</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Specializations</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Cybersecurity</span>
+                        <span class="skill-item">Cloud Architecture</span>
+                        <span class="skill-item">Data Security</span>
+                        <span class="skill-item">Web Development</span>
+                        <span class="skill-item">Database Management</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Password Manager</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/aavila02" target="_blank" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-description">
-                            <p>A secure password manager built with Python that implements AES-GCM encryption to protect stored passwords. Features include strong password generation through Scrypt key derivation and secure password retrieval.</p>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Cryptography</span>
-                            <span class="tech-tag">File I/O</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Web Scraping for Data Security</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/aavila02" target="_blank" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-description">
-                            <p>Python-based web scraper designed to scan public websites and automatically detect exposed sensitive information like emails and API keys using regular expressions. Helps identify potential security vulnerabilities from plaintext data.</p>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Web Scraping</span>
-                            <span class="tech-tag">Regular Expressions</span>
-                            <span class="tech-tag">API Handling</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Resume Section with Enhanced Professional Experience -->
-<section id="resume">
-    <div class="container">
-        <h2 class="section-title">Resume</h2>
-        
-        <!-- Featured Professional Experience Spotlight -->
-        <div class="featured-experience">
-            <div class="featured-header">
-                <h3>Featured Professional Experience</h3>
-                <span class="featured-badge">Upcoming Summer 2025</span>
-            </div>
-            <div class="featured-content">
-                <div class="featured-logo">
-                    <img src="/assets/icons/Accenture.png.webp" alt="Accenture Logo" class="company-logo">
-                </div>
-                <div class="featured-details">
-                    <h4>Technology Summer Analyst - Accenture</h4>
-                    <p class="featured-location">Los Angeles, California</p>
-                    <p class="featured-description">Selected for Accenture's competitive Technology Analyst program focusing on technology architecture, enterprise solutions, and client consulting.</p>
-                    <div class="featured-responsibilities">
-                        <h5>Key Responsibilities:</h5>
-                        <ul>
-                            <li>Contribute to enterprise technology architecture and solution design for global clients</li>
-                            <li>Collaborate with cross-functional teams on technology strategy and implementation</li>
-                            <li>Develop technical skills through formal training and hands-on client project experience</li>
-                            <li>Apply cybersecurity principles to solution architecture and systems design</li>
-                        </ul>
-                    </div>
-                    <div class="tech-skills-container">
-                        <span class="tech-tag featured">Enterprise Architecture</span>
-                        <span class="tech-tag featured">Technology Consulting</span>
-                        <span class="tech-tag featured">Solution Design</span>
-                        <span class="tech-tag featured">Client Engagement</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="resume-container">
-            <div class="resume-content">
-                <h3>Education</h3>
-                <div class="resume-item">
-                    <div class="resume-title">
-                        <h4>Arizona State University</h4>
-                        <span class="resume-date">Expected May 2026</span>
-                    </div>
-                    <p>B.S. in Computer Science, Emphasis on Cybersecurity</p>
-                    <p>GPA: 3.6/4.0</p>
-                    <p>Relevant Courses: Introduction to Cybersecurity, Data Structures & Algorithms, Operating Systems</p>
-                </div>
-
-                <h3>Leadership Experience</h3>
-                <div class="resume-item">
-                    <div class="resume-title">
-                        <h4>Supervisor at Dairy Queen</h4>
-                        <span class="resume-date">August 2022 - Present</span>
-                    </div>
-                    <ul>
-                        <li>Led and motivated a diverse team to ensure smooth daily operations</li>
-                        <li>Managed scheduling and delegated responsibilities</li>
-                        <li>Collaborated with upper management to implement new initiatives</li>
-                    </ul>
-                </div>
-                <div class="resume-item">
-                    <div class="resume-title">
-                        <h4>Member of SHPE (Society of Hispanic Professional Engineers)</h4>
-                        <span class="resume-date">December 2021 - Present</span>
-                    </div>
-                    <ul>
-                        <li>Engaged in professional development workshops</li>
-                        <li>Networked with industry professionals during SHPE events</li>
-                        <li>Participated in Hackathons and programming challenges</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="resume-actions">
-                <a href="assets/resume/Resume.pdf" class="btn primary-btn" download>
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <!-- Email with obfuscation notice (actual email will be added via JS) -->
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span id="email-display">Email address loading...</span>
-                </div>
-                <!-- LinkedIn -->
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://linkedin.com/in/a-anthony-g" target="_blank">linkedin.com/in/a-anthony-g</a>
-                </div>
-                <!-- GitHub -->
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/aavila02" target="_blank">github.com/aavila02</a>
-                </div>
-                <!-- Optional: Add this if you want to include a note about contact preference -->
-                <div class="contact-note">
-                    <p>I prefer initial contact through LinkedIn. For direct inquiries, please use the email displayed above.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Anthony Avila Gonzalez. All rights reserved.</p>
