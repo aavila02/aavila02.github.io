@@ -6,10 +6,18 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-    color: #e0e0e0;
+    background: #050505;
+    color: #dfe3e8;
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+    color: #8fa7ff;
+    margin-bottom: 1rem;
 }
 
 .container {
@@ -70,6 +78,7 @@ nav {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    padding: 8rem 0 6rem;
 }
 
 .hero::before {
@@ -95,17 +104,17 @@ nav {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: clamp(3rem, 6vw, 4.5rem);
     font-weight: 800;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #00d4ff 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #9bb4ff 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: fadeInUp 1s ease-out;
 }
 
-.hero p {
+.hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     opacity: 0.9;
@@ -115,18 +124,73 @@ nav {
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-    color: white;
+    background: linear-gradient(120deg, #5b74ff, #17c4ff);
+    color: #fff;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
     transition: all 0.3s ease;
     animation: fadeInUp 1s ease-out 0.6s both;
+    border: none;
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(91, 116, 255, 0.35);
+}
+
+.ghost-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out 0.65s both;
+}
+
+.ghost-button:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #9bb4ff;
+    color: #9bb4ff;
+    transform: translateY(-2px);
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.hero-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 18px;
+    padding: 1.25rem 1.75rem;
+    min-width: 150px;
+}
+
+.highlight-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #9bb4ff;
+}
+
+.highlight-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #9a9fae;
 }
 
 @keyframes fadeInUp {
@@ -147,10 +211,10 @@ section {
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 700;
     margin-bottom: 3rem;
-    color: #00d4ff;
+    color: #cfd8ff;
 }
 
 /* About Section */
@@ -170,6 +234,7 @@ section {
 .about-text {
     font-size: 1.1rem;
     line-height: 1.8;
+    color: #c7cbd4;
 }
 
 .contact-info {
@@ -185,7 +250,7 @@ section {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -200,7 +265,7 @@ section {
 }
 
 .contact-item i {
-    color: #00d4ff;
+    color: #9bb4ff;
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
@@ -230,17 +295,17 @@ section {
 
 /* Experience Section */
 .experience-item {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
     padding: 2rem;
     border-radius: 15px;
     margin-bottom: 2rem;
-    border-left: 4px solid #00d4ff;
+    border-left: 4px solid #5b74ff;
     transition: all 0.3s ease;
 }
 
 .experience-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.1);
+    box-shadow: 0 20px 60px rgba(91, 116, 255, 0.12);
 }
 
 .experience-header {
@@ -253,21 +318,21 @@ section {
 .experience-title {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #00d4ff;
+    color: #bcccff;
 }
 
 .experience-company {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #f7f8fb;
 }
 
 .experience-date {
-    background: rgba(0, 212, 255, 0.2);
+    background: rgba(155, 180, 255, 0.18);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
-    color: #00d4ff;
+    color: #9bb4ff;
 }
 
 .experience-description {
@@ -290,7 +355,7 @@ section {
 
 /* Projects Section */
 .projects {
-    background: rgba(26, 26, 26, 0.5);
+    background: rgba(15, 15, 15, 0.7);
 }
 
 .projects-grid {
@@ -301,24 +366,70 @@ section {
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
     padding: 2rem;
     border-radius: 15px;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(0, 212, 255, 0.2);
-    border-color: #00d4ff;
+    box-shadow: 0 25px 70px rgba(91, 116, 255, 0.15);
+    border-color: rgba(155, 180, 255, 0.6);
 }
 
 .project-title {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #00d4ff;
+    color: #c6d2ff;
     margin-bottom: 1rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.project-year {
+    font-size: 0.85rem;
+    color: #9a9fae;
+    text-transform: uppercase;
+}
+
+.project-meta {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8b90a3;
+    margin-bottom: 1.25rem;
+}
+
+.project-details {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding-left: 1.5rem;
+    color: #cfd3df;
+}
+
+.project-details li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.project-details li::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0.7rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5b74ff, #17c4ff);
+    box-shadow: 0 0 10px rgba(91, 116, 255, 0.5);
 }
 
 .project-tech {
@@ -329,8 +440,8 @@ section {
 }
 
 .tech-tag {
-    background: rgba(0, 212, 255, 0.2);
-    color: #00d4ff;
+    background: rgba(155, 180, 255, 0.2);
+    color: #9bb4ff;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -339,7 +450,21 @@ section {
 
 .project-description {
     line-height: 1.7;
-    color: #c0c0c0;
+    color: #cfd3df;
+    margin-bottom: 1.5rem;
+}
+
+.project-links a {
+    color: #9bb4ff;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
 }
 
 /* GitHub CTA Section */
@@ -431,7 +556,7 @@ section {
 }
 
 .skill-category h3 {
-    color: #00d4ff;
+    color: #cdd6ff;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -462,6 +587,38 @@ footer {
     text-align: center;
     padding: 2rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #8f96a8;
+}
+
+.contact {
+    padding-bottom: 6rem;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, rgba(91, 116, 255, 0.2), rgba(23, 196, 255, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-card h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    color: #e4e8f2;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -489,6 +646,20 @@ footer {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-actions {
+        justify-content: center;
     }
 }
 
